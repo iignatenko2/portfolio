@@ -10,64 +10,43 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm">
         <style> 
-        body{background-color:lightcyan;}
+        body{background-color:lightgray;
+        background-image: url('images/background.png'); 
+        background-repeat: no-repeat; /* Neatkārtot attēlu */
+    background-position: top center, bottom center; /* Novietot attēlu augšā un apakšā */
+    background-size: 100% auto; /* Attēls aizņem visu platumu, bet augstumu pielāgo automātiski */
+    background-attachment: fixed; /* Fiksē fonu, lai tas neritinās */
+        }
         p.text1{font-size: 135%;}
         h1.head{text-align: center;}
+        h2.head2{text-align:center;}
         tr.klase7{  font-size: 120%}
         ul.table1{padding-left: 3cm; font-size: 125%;}
         
-        
-        
-        table {
-            border:2px solid blue;
-            margin-left: 2cm; /* Moves the table 2 centimeters from the left border */
-            border-collapse: collapse; /* Makes borders collapse into a single line */
-        }
-        /* Style for the table cells */
-        td, th {
-            padding: 10px; /* Adds padding inside each cell */
-            border: 1px solid black; /* Adds a border to the table cells */
-            text-align: left; /* Aligns text to the left inside the cells */
-        }
-        
-        h2.head2{
-            font-size: 170%;
-            padding-left:1.5cm;
-        }
-        p.text2{
-            font-size:130%;
-            padding-left:2cm;
-        }
-        
-        img.image1 {
-            width: 700px;
-            height: 490px;
-            
-        }
+        .button {
+      display: block;
+    width: 400px; 
+    height: 200px; 
+    background-color: green;  
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer; 
+    margin: 20px auto; 
+    background-image: url('images/newbutton.png'); 
+    background-size: contain; /* Attēls pilnībā ietilps pogā, bet var būt tukšas malas */
+    background-position: center; /* Attēla centrēšana */
+    background-repeat: no-repeat; /* Neatkārtot attēlu */
+    
+}
+ 
         </style>
     </head>
     <body>
         <div> <h1 class="head"> Mans datorikas portfolio </h1> </div>
-        <p  class="text1">Šajā mājaslapā es pastāstīšu par to, ko līdz šim esmu apguvis datorikas stundās, kā pierādījumus ievietošu attēlus, video un citu informāciju. </p>
-        <table>
-            <tr class="klase7"><td> 10.klase</td> </tr>
-        </table>
-        
-        <ul class="table1"> 
-            <li> <a href="#section1">Gimp</a></li>
-            <li>Inscape</li>
-            <li>Word</li>
-            <li>Excel</li>
-            <li>Tinkercad(3d klucītis)</li>
-            <li>Klipchamp(video montēšana)</li>
-            <li>HTML</li>
-        </ul>
-        
-        <h2 class="head2" id="section1">Gimp</h2>
-        <p class="text2">Mūsu semestri mēs sākam ar GIMP apguvi. GIMP programmā mēs zīmējām, mainījām attēlus, veidojām animācijas un nodarbojāmies ar foto apstrādi.<br> Tāpat es pievienošu pāris attēlus ar to,
-            ko mēs zīmējām. </p>
-        <img src="images/baners.jpg" class="image1" alt="image"> 
-        <img src="images/attels.gif" alt="image">
+          <div> <h2 class="head2"> Nospied šo pogu, lai redzētu manu portfolio. </h2> </div>
+          <input type="button" class='button'  onclick="window.location.href='http://localhost:8383/HTML5Application/newhtml.html';" >
+
+       
         
     </body>
 </html>
